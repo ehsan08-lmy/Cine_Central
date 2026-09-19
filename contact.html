@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Central - Data &amp; Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cine Central: Film &amp; Movie Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Christopher Nolan Filmography &amp; Box Office</h2>
+        
+        <!-- Table requirement -->
+        <table>
+            <caption>Selected Christopher Nolan Movies Data</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Movie Title</th>
+                    <th scope="col">Release Year</th>
+                    <th scope="col">Runtime</th>
+                    <th scope="col">Worldwide Box Office</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">The Dark Knight</th>
+                    <td>2008</td>
+                    <td>152 min</td>
+                    <td>$1.006 Billion</td>
+                </tr>
+                <tr>
+                    <th scope="row">Inception</th>
+                    <td>2010</td>
+                    <td>148 min</td>
+                    <td>$837 Million</td>
+                </tr>
+                <tr>
+                    <th scope="row">Interstellar</th>
+                    <td>2014</td>
+                    <td>169 min</td>
+                    <td>$731 Million</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dunkirk</th>
+                    <td>2017</td>
+                    <td>106 min</td>
+                    <td>$527 Million</td>
+                </tr>
+                <tr>
+                    <th scope="row">Oppenheimer</th>
+                    <td>2023</td>
+                    <td>180 min</td>
+                    <td>$957 Million</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- Colspan requirement -->
+                    <th scope="row" colspan="3">Total Covered Box Office Earnings</th>
+                    <td>$4.058 Billion</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Submit Your Review or Feedback</h2>
+
+        <!-- Form requirement -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>User Feedback Form</legend>
+
+                <p>
+                    <label for="username">Full Name:</label><br>
+                    <input type="text" id="username" name="username" placeholder="e.g. John Doe" required maxlength="50">
+                </p>
+
+                <p>
+                    <label for="useremail">Email Address:</label><br>
+                    <input type="email" id="useremail" name="useremail" placeholder="name@example.com" required>
+                </p>
+
+                <p>
+                    <label for="rating">Rating (1 to 10):</label><br>
+                    <input type="number" id="rating" name="rating" min="1" max="10" value="8">
+                </p>
+
+                <p>
+                    <label for="watchdate">Date Watched:</label><br>
+                    <input type="date" id="watchdate" name="watchdate">
+                </p>
+
+                <p>
+                    <label for="favcolor">Favorite Theme Color:</label><br>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                </p>
+
+                <p>
+                    <label>Would you recommend this website?</label><br>
+                    <input type="radio" id="rec-yes" name="recommend" value="yes" checked>
+                    <label for="rec-yes">Yes</label>
+                    <input type="radio" id="rec-no" name="recommend" value="no">
+                    <label for="rec-no">No</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Subscribe to movie review newsletter</label>
+                </p>
+
+                <p>
+                    <label for="comments">Your Review / Message:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your thoughts here..."></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Feedback">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cine Central Reviews. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
